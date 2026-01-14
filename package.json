@@ -1,0 +1,20 @@
+{
+  "name": "gaia-protocol",
+  "version": "1.0.0",
+  "description": "Gaia Protocol: Planetary DAO for Quantum Resource Management",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js --network polygonMumbai"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "hardhat": "^2.14.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@chainlink/contracts": "^0.6.1"  // For oracles (real-time data feeds)
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "chai": "^4.3.7"
+  }
+}
