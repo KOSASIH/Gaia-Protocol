@@ -1,0 +1,67 @@
+version: '3.8'
+services:
+  gaia-simulations:
+    build: .
+    context: .
+    dockerfile: config/Dockerfile.simulations
+    ports:
+      - "5000:5000"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./simulations:/app/simulations
+    depends_on:
+      - redis
+
+  gaia-contracts:
+    build: .
+    context: .
+    dockerfile: config/Dockerfile.contracts
+    ports:
+      - "8545:8545"
+    environment:
+      - PRIVATE_KEY=${PRIVATE_KEY}
+    volumes:
+      - ./contracts:/app/contracts
+      - ./scripts:/app/scripts
+
+  gaia-frontend:
+    build: .
+    context: .
+    dockerfile: config/Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - gaia-backend
+
+  gaia-backend:
+    build: .
+    context: .
+    dockerfile: config/Dockerfile.backend
+    ports:
+      - "3001:3001"
+      - "8080:8080"
+    environment:
+      - JWT_SECRET=${JWT_SECRET}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    depends_on:
+      - redis
+      - gaia-simulations
+
+  gaia-oracles:
+    build: .
+    context: .
+    dockerfile: config/Dockerfile.oracles
+    environment:
+      - CHAINLINK_API_KEY=${CHAINLINK_API_KEY}
+    depends_on:
+      - gaia-backend
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+networks:
+  gaia-net:
+    driver: bridge
