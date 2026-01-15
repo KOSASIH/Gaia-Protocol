@@ -1,0 +1,58 @@
+{
+  "dashboard": {
+    "title": "Gaia Protocol Planetary Monitor",
+    "tags": ["gaia", "dao", "quantum"],
+    "timezone": "UTC",
+    "panels": [
+      {
+        "title": "Resource Allocations (3D Globe)",
+        "type": "geomap",
+        "targets": [
+          {
+            "expr": "gaia_resource_allocation",
+            "legendFormat": "{{region}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                { "color": "green", "value": null },
+                { "color": "yellow", "value": 500 },
+                { "color": "red", "value": 1000 }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "AI Prediction Accuracy",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "gaia_ai_prediction_accuracy",
+            "legendFormat": "Accuracy"
+          }
+        ]
+      },
+      {
+        "title": "Quantum Sync Latency",
+        "type": "singlestat",
+        "targets": [
+          {
+            "expr": "gaia_quantum_sync_latency",
+            "legendFormat": "Latency (s)"
+          }
+        ]
+      }
+    ],
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    }
+  }
+}
