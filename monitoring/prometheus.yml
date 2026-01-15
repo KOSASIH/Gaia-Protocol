@@ -1,0 +1,26 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'gaia-simulations'
+    static_configs:
+      - targets: ['gaia-simulations:5000']
+    metrics_path: '/metrics'
+
+  - job_name: 'gaia-contracts'
+    static_configs:
+      - targets: ['gaia-contracts:8545']
+    metrics_path: '/metrics'
+
+  - job_name: 'gaia-backend'
+    static_configs:
+      - targets: ['gaia-backend:3001']
+    metrics_path: '/metrics'
+
+  - job_name: 'gaia-oracles'
+    static_configs:
+      - targets: ['gaia-oracles:9090']
+    metrics_path: '/metrics'
+
+rule_files:
+  - 'alerts.yml'
