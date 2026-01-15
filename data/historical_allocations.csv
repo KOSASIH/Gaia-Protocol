@@ -1,0 +1,6 @@
+timestamp,region,water_allocated,energy_allocated,miners_allocated,efficiency_score
+2023-01-01,earth_north_america,100000,50000,20000,0.85
+2023-01-02,earth_africa,80000,30000,40000,0.78
+2023-01-03,mars_colony,5000,10000,50000,0.92
+2023-01-04,earth_north_america,95000,48000,19000,0.87
+2023-01-05,earth_africa,85000,32000,42000,0.80
