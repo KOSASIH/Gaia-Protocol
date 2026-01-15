@@ -1,0 +1,31 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+  <rect x="50" y="50" width="150" height="100" fill="#e1f5fe" stroke="#0277bd"/>
+  <text x="75" y="100" font-family="Arial" font-size="14">Simulations</text>
+  <text x="75" y="120" font-family="Arial" font-size="12">(Quantum, AI, IoT)</text>
+  
+  <rect x="250" y="50" width="150" height="100" fill="#f3e5f5" stroke="#7b1fa2"/>
+  <text x="275" y="100" font-family="Arial" font-size="14">Blockchain</text>
+  <text x="275" y="120" font-family="Arial" font-size="12">(DAO, Allocators)</text>
+  
+  <rect x="450" y="50" width="150" height="100" fill="#e8f5e8" stroke="#388e3c"/>
+  <text x="475" y="100" font-family="Arial" font-size="14">Oracles</text>
+  <text x="475" y="120" font-family="Arial" font-size="12">(Chainlink Bridge)</text>
+  
+  <rect x="150" y="200" width="150" height="100" fill="#fff3e0" stroke="#f57c00"/>
+  <text x="175" y="250" font-family="Arial" font-size="14">Frontend</text>
+  <text x="175" y="270" font-family="Arial" font-size="12">(React, 3D Maps)</text>
+  
+  <rect x="350" y="200" width="150" height="100" fill="#fce4ec" stroke="#c2185b"/>
+  <text x="375" y="250" font-family="Arial" font-size="14">Backend</text>
+  <text x="375" y="270" font-family="Arial" font-size="12">(APIs, WebSockets)</text>
+  
+  <line x1="125" y1="150" x2="225" y2="200" stroke="#000" marker-end="url(#arrow)"/>
+  <line x1="325" y1="150" x2="425" y2="200" stroke="#000" marker-end="url(#arrow)"/>
+  <line x1="525" y1="150" x2="475" y2="200" stroke="#000" marker-end="url(#arrow)"/>
+  <text x="300" y="180" font-family="Arial" font-size="12">Data Flow</text>
+</svg>
