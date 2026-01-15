@@ -1,6 +1,10 @@
 # Gaia-Protocol
 Gaia Protocol—a planetary DAO for global resource management using quantum-entangled ledgers and algorithmic governance. 
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Polygon](https://img.shields.io/badge/Network-Polygon-blue)](https://polygon.technology/)
+[![Quantum](https://img.shields.io/badge/Tech-Quantum%20Entangled-red)](https://qiskit.org/)
+
 # Gaia Protocol: Planetary DAO for Quantum Resource Management
 
 > **Vision (2065)**: The collapse of national supply chains leads to the Gaia Protocol—a planetary Decentralized Autonomous Organization (DAO) managing global resources via quantum-entangled ledgers. Web4 evolves into an "Internet of Everything," where every atom is digitally twinned and tracked in real-time. The economy ceases to be speculative, becoming an engine of **Perfect Allocation** through algorithmic governance, optimizing water, energy, and minerals dynamically. Markets oscillate like a biological homeostatic system, self-correcting instantly based on planetary needs, not profit.
