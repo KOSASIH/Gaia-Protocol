@@ -1,0 +1,43 @@
+{
+  "regions": [
+    {
+      "id": "earth_north_america",
+      "name": "North America",
+      "coordinates": [40.0, -100.0],
+      "population": 579000000,
+      "resources": {
+        "water": 1200000,
+        "energy": 800000,
+        "minerals": 500000
+      },
+      "climate": "temperate",
+      "risks": ["drought", "storms"]
+    },
+    {
+      "id": "earth_africa",
+      "name": "Africa",
+      "coordinates": [0.0, 20.0],
+      "population": 1340000000,
+      "resources": {
+        "water": 800000,
+        "energy": 400000,
+        "minerals": 900000
+      },
+      "climate": "tropical",
+      "risks": ["desertification", "floods"]
+    },
+    {
+      "id": "mars_colony",
+      "name": "Mars Colony",
+      "coordinates": [0.0, 0.0],
+      "population": 1000,
+      "resources": {
+        "water": 50000,
+        "energy": 200000,
+        "minerals": 1000000
+      },
+      "climate": "arctic",
+      "risks": ["dust_storms", "radiation"]
+    }
+  ]
+}
