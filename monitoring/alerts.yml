@@ -1,0 +1,36 @@
+groups:
+  - name: gaia_alerts
+    rules:
+      - alert: QuantumSyncFailure
+        expr: gaia_quantum_sync_latency > 10
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Quantum ledger sync is slow"
+          description: "FTL sync latency > 10s for {{ $labels.node }}"
+
+      - alert: AIAllocationImbalance
+        expr: gaia_ai_allocation_variance > 0.5
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "AI allocations are imbalanced"
+          description: "Variance in allocations > 0.5, triggering rebalance"
+
+      - alert: IoTAnomalyDetected
+        expr: gaia_iot_anomaly_score > 0.8
+        for: 1m
+        labels:
+          severity: high
+        annotations:
+          summary: "IoT anomaly detected"
+          description: "Anomaly score > 0.8 in {{ $labels.sensor }}"
+
+      - alert: ContractGasSpike
+        expr: increase(gaia_contract_gas_used[5m]) > 1000000
+        labels:
+          severity: info
+        annotations:
+          summary: "High gas usage on contracts"
