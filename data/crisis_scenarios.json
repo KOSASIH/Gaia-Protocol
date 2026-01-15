@@ -1,0 +1,24 @@
+{
+  "scenarios": [
+    {
+      "name": "Global Drought 2065",
+      "description": "70% water reduction due to climate collapse",
+      "affected_regions": ["earth_africa", "earth_north_america"],
+      "modifications": {
+        "water_multiplier": 0.3,
+        "energy_multiplier": 0.9
+      },
+      "ai_response": "Prioritize water reallocation with 20% efficiency boost"
+    },
+    {
+      "name": "Mars Dust Storm",
+      "description": "Energy disruption on Mars colony",
+      "affected_regions": ["mars_colony"],
+      "modifications": {
+        "energy_multiplier": 0.5,
+        "minerals_multiplier": 1.2
+      },
+      "ai_response": "Switch to mineral-based energy alternatives"
+    }
+  ]
+}
