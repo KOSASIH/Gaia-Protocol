@@ -6,6 +6,8 @@ Gaia Protocol—a planetary DAO for global resource management using quantum-ent
 [![Quantum](https://img.shields.io/badge/Tech-Quantum%20Entangled-red)](https://qiskit.org/)
 <!-- automation black badge -->
 <a href="https://chain.link/badge"> <img src="https://chain.link/badge-automation-black" alt="automation secured with chainlink"></a>
+<!-- market data black badge -->
+<a href="https://chain.link/badge"> <img src="https://chain.link/badge-market-data-black" alt="market data secured with chainlink"></a>
 
 # Gaia Protocol: Planetary DAO for Quantum Resource Management
 
